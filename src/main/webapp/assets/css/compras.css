@@ -1,0 +1,202 @@
+body {
+  background-color: #faf8f3;
+}
+
+
+.card-header {
+  background-color: #ffff;
+}
+
+/*== Estilos de paginación ==*/
+
+.navbar {
+  padding: 0px;
+}
+
+.navbar-color {
+  background-color: rgb(255, 255, 255);
+  border-bottom   : 3px solid rgb(131, 148, 86);
+  box-shadow      : 0px 2px 20px 0px black;
+}
+
+.navbar-color .nav-item>.nav-link {
+  color: rgb(0, 0, 0);
+}
+
+.btn-group>.btn-menu>img {
+  width: 40px;
+  height: 40px;
+}
+
+.btn>img {
+  width: 20px;
+}
+
+.navbar>.btn {
+  background-color: rgba(0, 0, 0, 0.041);
+  border-color    : transparent;
+  color           : rgb(0, 0, 0);
+}
+
+.modal-backdrop {
+  z-index: 5;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #ff9900;
+  border-color: #edbc71;
+}
+
+#btn-compra {
+  background-color: rgb(112, 185, 77);
+  border-color    : transparent;
+  color           : rgb(255, 255, 255);
+  font-weight     : 400;
+}
+
+#btn-compra:hover {
+  background-color: rgb(95, 160, 65);
+}
+
+.badge {
+  font-weight: 500;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-comprar{
+  font-weight: 500;
+}
+
+.navbar-brand {
+  background-color: rgb(235, 180, 97);
+}
+
+.nav-link {
+  /* font-family: 'Middleearth';*/
+  color      : rgb(110, 110, 110);
+  font-weight: 500;
+  font-size  : 20px;
+}
+
+.pagination>li>a {
+  background-color: white;
+  color           : #5a5a5a;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color           : #111;
+  background-color: #ffc107;
+  border-color    : #ffc107;
+}
+
+.pagination>.active>a:hover {
+  background-color: secondary !Important;
+  border          : solid 1px #ffc107;
+
+}
+
+/* ==== Estilos del perfil ====*/
+
+.profile-card {
+  max-width    : 38rem;
+  border-radius: 10px;
+  box-shadow   : 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.profile-card_image-wrapper {
+  background: linear-gradient(rgba(83, 105, 118, 0.3), rgba(83, 105, 118, 0.3)),
+    url('/visitatierramedia/assets/img/profile/bosque.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+  background-color       : rgba(0, 0, 0, .15);
+  text-align             : center;
+  border-top-left-radius : 10px;
+  border-top-right-radius: 10px;
+}
+
+.profile-card_image {
+  width     : 12rem;
+  height    : 12rem;
+  margin    : 22px auto;
+  border    : 5px solid #EDEDED;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  object-fit: cover;
+}
+
+.profile-card_title {
+  font-size    : 2rem;
+  font-weight  : 700;
+  /* display   : inline-block;
+  padding      : 4px 6px 6px 6px;
+  background   : rgba(0, 0, 0, .70);
+  color        : #fff;
+  border-radius: 3px; */
+}
+
+.profile-card_atraccion-fav,
+.profile-card_tiempo,
+.profile-card_presupuesto {
+  font-size     : 1.1rem;
+  font-weight   : 400;
+  text-transform: uppercase;
+  margin        : 16px 0;
+}
+
+/* Footer */
+
+a:hover {
+  color: darkgoldenrod;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.footerDeFooter {
+  background-color: #443131;
+}
+
+.logoJdN {
+  width: 150px;
+}
+a.list-group-item.bg-transparent {
+font-weight: 600;
+}
+
+/* Subtitulos de páginas */
+.subtitulo {
+  font-family: 'Middleearth';
+  font-size  : 4.5vh;
+  font-weight: 900;
+  color      : rgb(0, 0, 0);
+}
+
+.card-big{
+  object-fit: cover;
+  height: 242.23px;
+}
+
+ .card-foto{
+  object-fit: cover;
+  height: 242.23px;
+  width: 430.61px;
+} 
+
+ .card-datos{
+  text-align: left;
+} 
+
+.dato-oro{
+  color: rgb(255, 145, 0);
+  font-weight: 500;
+}

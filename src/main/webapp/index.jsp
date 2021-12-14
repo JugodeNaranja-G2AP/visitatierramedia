@@ -290,7 +290,7 @@
                     <div class="col-12 col-md-4">
                         <div class="card cardInter ps-1 pe-1 pb-1">
                             <div class="wrapper h-100 text-white">
-                                <img class="card-img-top h-100" src="/visitatierramedia/assets/img/TM-Fotos/Beleriand.jpg" alt="fotoPaisaje">
+                                <img class="card-img-top h-100" src="/visitatierramedia/assets/img/TM-Fotos/Belerian.jpg" alt="fotoPaisaje">
                                 <div class="card-img-overlay d-flex align-items-end">
                                     <h3 class=" card-title">Paisajismo</h3>
                                 </div>
@@ -309,6 +309,7 @@
                     </div>
                 </div>
         </section> 
+       
     </main>
 
 	<jsp:include page="/partials/footer.jsp"></jsp:include>

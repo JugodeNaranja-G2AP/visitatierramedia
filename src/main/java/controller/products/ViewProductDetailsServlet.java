@@ -10,18 +10,21 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.Usuario;
 import services.ProductService;
+import services.UserService;
 import tierramedia.Producto;
 
 @WebServlet("/product-details.do")
 public class ViewProductDetailsServlet extends HttpServlet {
 
 	private static final long serialVersionUID = -9195788588049296317L;
-	private ProductService productService; 
+	private ProductService productService;
+	private UserService userService;
 	
 	@Override
 	public void init() throws ServletException {
 		super.init();
 		this.productService = new ProductService();
+		this.userService = new UserService();
 	}
 	
 	@Override
@@ -30,6 +33,7 @@ public class ViewProductDetailsServlet extends HttpServlet {
 		int productoId = Integer.parseInt(req.getParameter("id"));
 		String productoNombre = req.getParameter("name");
 		
+		userService.setItinerary(usuario);
 		Producto producto = productService.find(productoNombre, productoId);
 		
 		req.setAttribute("producto", producto);

@@ -82,6 +82,7 @@ public class Atraccion implements Producto {
 		return imagen;
 	}
 
+	@Override
 	public boolean hayCupo() {
 		return this.cupoDePersonas > 0;
 	}
@@ -175,7 +176,7 @@ public class Atraccion implements Producto {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(costoDeVisita, nombre, tiempoDeVisita, tipo);
+		return Objects.hash(costoDeVisita, cupoDePersonas, descripcion, imagen, nombre, tiempoDeVisita, tipo);
 	}
 
 	@Override
@@ -187,9 +188,11 @@ public class Atraccion implements Producto {
 		if (getClass() != obj.getClass())
 			return false;
 		Atraccion other = (Atraccion) obj;
-		return costoDeVisita == other.costoDeVisita && Objects.equals(nombre, other.nombre)
+		return costoDeVisita == other.costoDeVisita && cupoDePersonas == other.cupoDePersonas
+				&& Objects.equals(descripcion, other.descripcion) && Objects.equals(imagen, other.imagen)
+				&& Objects.equals(nombre, other.nombre)
 				&& Double.doubleToLongBits(tiempoDeVisita) == Double.doubleToLongBits(other.tiempoDeVisita)
-				&& tipo == other.tipo;
+				&& Objects.equals(tipo, other.tipo);
 	}
 
 	@Override

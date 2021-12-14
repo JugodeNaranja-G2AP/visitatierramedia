@@ -72,6 +72,12 @@ public class UserService {
 		return usuarios;
 	}
 	
+	public Usuario setItinerary(Usuario usuario) {
+		UserDAO userDAO = DAOFactory.getUserDAO();
+		usuario.setProductosComprados(userDAO.obtenerItinerario(usuario));
+		return usuario;
+	}
+	
 	public int count() {
 		return DAOFactory.getUserDAO().countAll();
 	}

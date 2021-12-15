@@ -15,7 +15,7 @@
 						role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
 							class="fas fa-user fa-fw"></i></a>
 					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="/visitatierramedia/admin/logout">Cerrar sesiï¿½n</a></li>
+						<li><a class="dropdown-item" href="/visitatierramedia/admin/logout">Cerrar sesión</a></li>
 					</ul>
 				</li>
 			</ul>

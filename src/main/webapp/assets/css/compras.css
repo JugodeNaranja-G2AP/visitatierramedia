@@ -155,7 +155,7 @@ body {
 /* Footer */
 
 a:hover {
-  color: darkgoldenrod;
+  color: #d35f5f;
 }
 
 .list-group-item {
@@ -169,8 +169,24 @@ a:hover {
 .logoJdN {
   width: 150px;
 }
-a.list-group-item.bg-transparent {
-font-weight: 600;
+
+.footer-text {
+	font-weight: 600;
+}
+
+.btn-redes:hover {
+    color: #000;
+    background-color: #e36868;
+    border-color: #e36868;
+}
+
+.btn-redes {
+    background-color: rgba(0, 0, 0, 0.041);
+    border-color: transparent;
+    color: rgb(0, 0, 0);
+}
+.cuerpo-footer{
+	background-color: #d7d5c1
 }
 
 /* Subtitulos de páginas */

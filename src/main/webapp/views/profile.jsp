@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page import="utils.Reloj" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +50,7 @@
 	          </div>
 	          <div class="profile-card_tiempo">
 	            <span class="card-title">Tiempo disponible:</span>
-	            <span class="card-title"><c:out value="${usuario.tiempoDisponible}"></c:out> horas ⏳</span>
+	            <span class="card-title"><c:out value="${Reloj.conversor(usuario.tiempoDisponible)}"></c:out> ⏳</span>
 	          </div>
 	          <div class="profile-card_presupuesto">
 	            <span class="card-title">Presupuesto:</span>

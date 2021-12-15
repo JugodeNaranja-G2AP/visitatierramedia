@@ -31,7 +31,7 @@
 	      		<small>0 compras</small>
 		        <div class="card">
 			        <div class="card-body bg-light">
-			          <p>No tenés ninguna compra en estos momentos. En <a class="text-decoration-none" href="/visitatierramedia/products.do" target="_blank" rel="noopener noreferrer">ofertas</a> 
+			          <p>No tenés ninguna compra en estos momentos. En <a class="text-decoration-none" href="/visitatierramedia/products.do" rel="noopener noreferrer">ofertas</a> 
 			            podés conocer más acerca de nuestros productos y visitas a Tierra Media. </p>
 			        </div>
 			     </div> 
@@ -57,7 +57,7 @@
 						              </p>
 						            </div>
 						            <div class="col-lg-2 text-center my-auto">
-						              <a class="btn btn-warning shadow-sm" href="/visitatierramedia/product-details.do?id=${producto.id}" id="btn-compra" role="button">Ver compra</a>
+						              <a class="btn btn-warning shadow-sm" href="/visitatierramedia/product-details.do?id=${producto.id}&name=promocion" id="btn-compra" role="button">Ver compra</a>
 						            </div>
 						          </div>
 						        </div>
@@ -79,7 +79,7 @@
 						              </p>
 						            </div>
 						            <div class="col-lg-2 text-center my-auto">
-						              <a class="btn btn-warning shadow-sm" href="/visitatierramedia/product-details.do?id=${producto.id}" id="btn-compra" role="button">Ver compra</a>
+						              <a class="btn btn-warning shadow-sm" href="/visitatierramedia/product-details.do?id=${producto.id}&name=atraccion" id="btn-compra" role="button">Ver compra</a>
 						            </div>
 						          </div>
 						        </div>
@@ -92,23 +92,23 @@
 	      </c:choose>
 	      
 	
-	      <!-- Paginación --->
-	      <nav class="my-5" aria-label="paginacion-compras">
-	        <ul class="pagination justify-content-end">
-	          <li class="page-item disabled">
-	            <span class="page-link">Previous</span>
-	          </li>
-	          <li class="page-item"><a class="page-link" href="#">1</a></li>
-	          <li class="page-item active" aria-current="page">
-	            <span class="page-link">2</span>
-	          </li>
-	          <li class="page-item"><a class="page-link" href="#">3</a></li>
-	          <li class="page-item">
-	            <a class="page-link" href="#">Next</a>
-	          </li>
-	        </ul>
-	      </nav>
-	      <!-- Paginación --->
+<!-- 	      Paginación - -->
+<!-- 	      <nav class="my-5" aria-label="paginacion-compras"> -->
+<!-- 	        <ul class="pagination justify-content-end"> -->
+<!-- 	          <li class="page-item disabled"> -->
+<!-- 	            <span class="page-link">Previous</span> -->
+<!-- 	          </li> -->
+<!-- 	          <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+<!-- 	          <li class="page-item active" aria-current="page"> -->
+<!-- 	            <span class="page-link">2</span> -->
+<!-- 	          </li> -->
+<!-- 	          <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+<!-- 	          <li class="page-item"> -->
+<!-- 	            <a class="page-link" href="#">Next</a> -->
+<!-- 	          </li> -->
+<!-- 	        </ul> -->
+<!-- 	      </nav> -->
+<!-- 	      Paginación - -->
 	
 	    </div>
 	  </main>

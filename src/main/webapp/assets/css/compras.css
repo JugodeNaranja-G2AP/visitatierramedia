@@ -200,3 +200,9 @@ font-weight: 600;
   color: rgb(255, 145, 0);
   font-weight: 500;
 }
+
+/* Alerta del mensaje de error de la pág detalles */
+.red-alert {
+  background-color: #f8d7da;
+  color: #842029;
+}

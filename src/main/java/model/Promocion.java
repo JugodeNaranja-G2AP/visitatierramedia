@@ -77,6 +77,7 @@ public abstract class Promocion implements Producto {
 		return costoDePack;
 	}
 
+	@Override
 	public boolean hayCupo() {
 		boolean hayCupo = true;
 		for (Atraccion cadaAtraccion : atracciones) {
@@ -123,10 +124,10 @@ public abstract class Promocion implements Producto {
 	public boolean puedeSerOfertadoA(Usuario u) {
 		return hayCupo() && u.getPresupuesto() >= this.getCosto() && u.getTiempoDisponible() >= this.getTiempo();
 	}
-
+	
 	@Override
 	public int hashCode() {
-		return Objects.hash(atracciones, costoDePack, nombre, tiempoTotal, tipo);
+		return Objects.hash(atracciones, clase, costoDePack, descripcion, id, nombre, tiempoTotal, tipo);
 	}
 
 	@Override
@@ -138,12 +139,13 @@ public abstract class Promocion implements Producto {
 		if (getClass() != obj.getClass())
 			return false;
 		Promocion other = (Promocion) obj;
-		return Objects.equals(atracciones, other.atracciones) && costoDePack == other.costoDePack
+		return Objects.equals(atracciones, other.atracciones) && clase == other.clase
+				&& costoDePack == other.costoDePack && Objects.equals(descripcion, other.descripcion) && id == other.id
 				&& Objects.equals(nombre, other.nombre)
 				&& Double.doubleToLongBits(tiempoTotal) == Double.doubleToLongBits(other.tiempoTotal)
-				&& tipo == other.tipo;
+				&& Objects.equals(tipo, other.tipo);
 	}
-	
+
 	private String formatearAtracciones(List<Atraccion> atracciones) {
         String atraccionesFormateadas = "";
         for(Atraccion a: atracciones){
@@ -168,5 +170,7 @@ public abstract class Promocion implements Producto {
 	protected abstract String descripcion();
 
 	public abstract int ahorro();
+	
+	public abstract String beneficio();
 
 }

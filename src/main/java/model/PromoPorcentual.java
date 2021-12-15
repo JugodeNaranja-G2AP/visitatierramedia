@@ -45,4 +45,9 @@ public class PromoPorcentual extends Promocion {
 		return perfil;
 	}
 
+	@Override
+	public String beneficio() {
+		return porcentajeDescuento+"%";
+	}
+
 }

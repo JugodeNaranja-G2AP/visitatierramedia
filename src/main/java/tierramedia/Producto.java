@@ -14,5 +14,6 @@ public interface Producto {
 	boolean esPromocion();
 	void descontarCupo();
 	String getNombre();
+	boolean hayCupo();
 	List<Atraccion> obtenerAtracciones();
 }

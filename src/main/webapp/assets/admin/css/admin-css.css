@@ -90,3 +90,7 @@
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
+
+.btn-ingresar-login:hover{
+  background-color: #f19408;
+}

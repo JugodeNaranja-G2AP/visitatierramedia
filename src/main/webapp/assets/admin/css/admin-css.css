@@ -26,38 +26,67 @@
   color: bisque !important;
 }
 
-.btn-danger{
+.btn-danger {
   background-color: #bd0000;
-  border-color: #bd0000;
+  border-color    : #bd0000;
 }
 
-.btn-danger:hover{
+.btn-danger:hover {
   background-color: #ff0000;
-  border-color: #ff0000;
+  border-color    : #ff0000;
 }
 
-.btn-warning{
+.btn-warning {
   background-color: #d4a300;
-  border-color: #d4a300;
+  border-color    : #d4a300;
 }
 
-.btn-warning:hover{
+.btn-warning:hover {
   background-color: #ffc400;
-  border-color: #ffc400;
+  border-color    : #ffc400;
 }
 
-.cartaUno{
+.cartaUno {
   background-color: rgb(231, 162, 59);
 }
 
-.cartaDos{
+.cartaDos {
   background-color: rgb(138, 122, 71);
 }
 
-.cartaTres{
+.cartaTres {
   background-color: rgb(133, 118, 96);
 }
 
-.cartaCuatro{
+.cartaCuatro {
   background-color: rgb(126, 121, 113);
+}
+
+.dataTable-pagination li.active a {
+  z-index         : 3;
+  color           : #fff;
+  background-color: #d4a300;
+  border-color    : #d4a300;
+}
+
+.dataTable-pagination .active a,
+.dataTable-pagination .active a:focus,
+.dataTable-pagination .active a:hover {
+  background-color: #d4a400;
+  border-color    : #d4a400
+}
+
+.dataTable-pagination-list>a {
+  color: #d4a300;
+}
+
+.dataTable-pagination-list a {
+  color: #d4a300;
+}
+
+.dataTable-pagination a:hover {
+  z-index: 2;
+  color: #d4a300;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
 }

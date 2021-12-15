@@ -1,17 +1,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <div id="layoutSidenav_nav">
-	<nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+	<nav class="sb-sidenav accordion sb-sidenav-light side-admin" id="sidenavAccordion">
 		<div class="sb-sidenav-menu">
 			<div class="nav">
-				<div class="sb-sidenav-menu-heading">Menu principal</div>
-				<a class="nav-link" href="/visitatierramedia/admin/">
+				<div class="sb-sidenav-menu-heading titulos-tabla">Menu principal</div>
+				<a class="nav-link side-lista" href="/visitatierramedia/admin/">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-tachometer-alt"></i>
 					</div> Tablero
 				</a>
-				<div class="sb-sidenav-menu-heading">Formularios</div>
-				<a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+				<div class="sb-sidenav-menu-heading titulos-tabla">Formularios</div>
+				<a class="nav-link side-lista collapsed" href="#" data-bs-toggle="collapse"
 					data-bs-target="#collapseLayouts" aria-expanded="false"
 					aria-controls="collapseLayouts">
 					<div class="sb-nav-link-icon">
@@ -35,27 +35,27 @@
 							href="/visitatierramedia/admin/create.do">Nuevo Admin</a>
 					</nav>
 				</div>
-				<div class="sb-sidenav-menu-heading">Tablas</div>
-				<a class="nav-link" href="/visitatierramedia/admin/users/data-table.do">
+				<div class="sb-sidenav-menu-heading titulos-tabla">Tablas</div>
+				<a class="nav-link side-lista" href="/visitatierramedia/admin/users/data-table.do">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-table"></i>
 					</div> Usuarios
-				</a> <a class="nav-link"
+				</a> <a class="nav-link side-lista"
 					href="/visitatierramedia/admin/attractions/data-table.do">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-table"></i>
 					</div> Atracciones
-				</a> <a class="nav-link"
+				</a> <a class="nav-link side-lista"
 					href="/visitatierramedia/admin/promotions/data-table.do">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-table"></i>
 					</div> Promociones
-				</a> <a class="nav-link"
+				</a> <a class="nav-link side-lista"
 					href="/visitatierramedia/admin/attraction-types/data-table.do">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-table"></i>
 					</div> Tipos de atracción
-				</a> <a class="nav-link" href="/visitatierramedia/admin/data-table.do">
+				</a> <a class="nav-link side-lista" href="/visitatierramedia/admin/data-table.do">
 					<div class="sb-nav-link-icon">
 						<i class="fas fa-table"></i>
 					</div> Administradores

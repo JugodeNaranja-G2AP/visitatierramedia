@@ -12215,15 +12215,3 @@ body {
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
 }
-
-/* LOGIN PAGE IMAGE STYLES */
-
-.bg-image {
-  background: linear-gradient(rgba(83, 105, 118, 0.5), rgba(83, 105, 118, 0.5)),
-    url('/visitatierramedia/assets/img/tm-bg.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: #fafafa;
-}

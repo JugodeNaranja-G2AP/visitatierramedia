@@ -98,15 +98,15 @@
                           </div>
 	                      </td>
 	                      <c:choose>
-	                      	<c:when test="${promocion.clase.equals(PROMOAXB)}">        		
-	                      	  <td><c:out value="${promocion.atraccionGratis}"></c:out></td>
+	                      	<c:when test="${promocion.clase.equals(ClaseDePromo.PROMOAXB)}">        		
+	                      	  <td><c:out value="${(PromoAxB) promocion.atraccionGratis}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
 	                      		<td>----</td>
 	                      	</c:otherwise>
 	                      </c:choose>
 	                      <c:choose>
-	                      	<c:when test="${promocion.clase.equals(PROMO_ABSOLUTA)}">
+	                      	<c:when test="${promocion.clase.equals(ClaseDePromo.PROMO_ABSOLUTA)}">
 	                      	  <td><c:out value="${promocion.costoDePromo}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
@@ -114,7 +114,7 @@
 	                      	</c:otherwise>
 	                      </c:choose>
 	                      <c:choose>
-	                      	<c:when test="${promocion.clase.equals(PROMO_PORCENTUAL)}">
+	                      	<c:when test="${promocion.clase.equals(ClaseDePromo.PROMO_PORCENTUAL)}">
 	                      	  <td><c:out value="${promocion.porcentajeDescuento}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>

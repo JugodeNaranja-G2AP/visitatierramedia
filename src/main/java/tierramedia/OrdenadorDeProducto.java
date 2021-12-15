@@ -14,7 +14,7 @@ public class OrdenadorDeProducto implements Comparator<Producto> {
 	@Override
 	public int compare(Producto o1, Producto o2) {
 		// Según tipo preferido de atracción
-		if (o1.getTipo() == tipoAtraccionPreferida && o2.getTipo() != tipoAtraccionPreferida) {
+		if (o1.getTipo().equals(tipoAtraccionPreferida) && !o2.getTipo().equals(tipoAtraccionPreferida)) {
 			return -1;
 		} else if (o1.getTipo() != tipoAtraccionPreferida && o2.getTipo() == tipoAtraccionPreferida) {
 			return 1;

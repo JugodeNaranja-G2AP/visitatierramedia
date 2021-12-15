@@ -38,4 +38,9 @@ public class PromoAxB extends Promocion {
 		perfil += "\t×¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n";
 		return perfil;
 	}
+
+	@Override
+	public String beneficio() {
+		return atraccionGratis.getNombre();
+	}
 }

@@ -170,5 +170,7 @@ public abstract class Promocion implements Producto {
 	protected abstract String descripcion();
 
 	public abstract int ahorro();
+	
+	public abstract String beneficio();
 
 }

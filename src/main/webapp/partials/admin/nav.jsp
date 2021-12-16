@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-admin fixed-top">
 	<div class="container">
 		<!-- Navbar Brand-->
-		<a class="navbar-brand ps-3" href="index.html"> <img src="/visitatierramedia/assets/img/logos/logo_blanco.png"
+		<a class="navbar-brand ps-3" href="/visitatierramedia/admin/"> <img src="/visitatierramedia/assets/img/logos/logo_blanco.png"
 				alt="logo-brand" width="190">
 		</a>
 		<!-- Sidebar Toggle-->

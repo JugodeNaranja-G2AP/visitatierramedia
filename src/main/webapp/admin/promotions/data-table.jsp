@@ -25,6 +25,15 @@
 	              <li class="breadcrumb-item active">Promociones</li>
 	            </ol>
 	            
+	            <c:if test="${flash != null}">
+					<div class="alert alert-success alert-dismissible">
+						<button type="button" class="btn-close" data-bs-dismiss="alert"
+								aria-label="Close"></button>
+						<i class="fas fa-check-circle me-1"></i>
+						<span><c:out value="${flash}"></c:out></span>
+					</div>	
+				</c:if>
+	            
 	            <div class="mb-4">
 					<a href="/visitatierramedia/admin/promotions/create.do" class="btn btn-primary" role="button"> 
 						<i class="fas fa-plus"></i> 
@@ -99,7 +108,7 @@
 	                      </td>
 	                      <c:choose>
 	                      	<c:when test="${promocion.clase.equals(ClaseDePromo.PROMOAXB)}">        		
-	                      	  <td><c:out value="${(PromoAxB) promocion.atraccionGratis}"></c:out></td>
+	                      	  <td><c:out value="${promocion.atraccionGratis}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
 	                      		<td>----</td>
@@ -123,7 +132,7 @@
 	                      </c:choose>
 	                      
 	                      <td>
-	                      	<a class="btn btn-warning" href="/visitatierramedia/admin/promotions/edit.jsp" role="button" title="Editar">
+	                      	<a class="btn btn-warning" href="/visitatierramedia/admin/promotions/edit.do?id=${promocion.id}" role="button" title="Editar">
 	                          <i class="fas fa-pencil-alt"></i>
 	                        </a>
 	                        <!-- Button trigger modal -->

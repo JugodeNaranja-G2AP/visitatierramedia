@@ -60,6 +60,11 @@ public class AttractionService {
 		return atraccionDAO.find(id);
 	}
 	
+	public Atraccion findByName(String nombre) {
+		AtraccionDAO atraccionDAO = DAOFactory.getAtraccionDAO();
+		return atraccionDAO.findByName(nombre);
+	}
+	
 	public int count() {
 		return DAOFactory.getAtraccionDAO().countAll();
 	}

@@ -31,7 +31,7 @@
 				<nav class="navbar navbar-expand-md navbar-light navbar-transp fixed-top bgcolor"
 					aria-label="Fourth navbar example">
 					<div class="container">
-						<a class="navbar-brand" href="#"> <img class="logo"
+						<a class="navbar-brand" href="/"> <img class="logo"
 								src="/visitatierramedia/assets/img/logos/logo-blanco-oro.png" alt="" width=190px />
 						</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"

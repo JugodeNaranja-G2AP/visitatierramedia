@@ -132,6 +132,7 @@ public class AtraccionDAOImpl implements AtraccionDAO {
 
 			return atraccion;
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new MissingDataException(e);
 		}
 	}
@@ -161,5 +162,26 @@ public class AtraccionDAOImpl implements AtraccionDAO {
 		String imagen = resultados.getString(8);
 
 		return new Atraccion(id, nombre, descripcion, costoDeVisita, tiempoDeVisita, cupoDePersonas, tipo, imagen);
+	}
+
+	@Override
+	public Atraccion findByName(String nombre) {
+		try {
+			String sql = "SELECT * FROM atracciones WHERE nombre = ?";
+			Connection conn = ConnectionProvider.getConnection();
+			PreparedStatement statement = conn.prepareStatement(sql);
+			statement.setString(1, nombre);
+			ResultSet resultados = statement.executeQuery();
+
+			Atraccion atraccion = null;
+
+			if (resultados.next()) {
+				atraccion = toAtraccion(resultados);
+			}
+
+			return atraccion;
+		} catch (Exception e) {
+			throw new MissingDataException(e);
+		}
 	}
 }

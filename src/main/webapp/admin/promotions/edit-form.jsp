@@ -9,6 +9,7 @@
     name="nombre"
     minlength="3"
     maxlength="250"
+    value="${promocion.nombre}"
     required
   />
   <div class="valid-feedback">ok!</div>
@@ -28,7 +29,7 @@
     name="descripcion"
     minlength="50"
     required
-  ></textarea>
+  >${promocion.descripcion}</textarea>
   <div class="valid-feedback">ok!</div>
   <div class="invalid-feedback">
     El campo descripción debe contener entre 50 caracteres como mínimo y 450 como máximo.
@@ -45,12 +46,16 @@
     name="tipo"
     required
   >
-    <option value="" selected disabled>
-      -- Seleccionar --
-    </option>
-    <c:forEach items="${tipos}" var="tipo">  
-      <option value="${tipo.nombre}"><c:out value="${tipo.nombre}"></c:out></option>
-    </c:forEach>
+    <c:forEach items="${tipos}" var="tipo">
+     <c:choose>
+     	<c:when test="${promocion.tipo.nombre.equals(tipo.nombre)}">
+     		<option value="${tipo.nombre}" selected><c:out value="${promocion.tipo.nombre}"></c:out></option>
+     	</c:when>
+     	<c:otherwise>
+     		<option value="${tipo.nombre}"><c:out value="${tipo.nombre}"></c:out></option>
+     	</c:otherwise>
+      </c:choose>		
+  </c:forEach>
   </select>
   <div class="valid-feedback">ok!</div>
   <div class="invalid-feedback">
@@ -68,18 +73,29 @@
     name="clase_de_promo"
     required
   >
-    <option value="" selected disabled>
-      -- Seleccionar --
-    </option>
-    <option value="PromoAxB">PromoAxB</option>
-    <option value="Promo_Absoluta">Promo_Absoluta</option>
-    <option value="Promo_Porcentual">Promo_Porcentual</option>
+  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMOAXB)}">  
+  		<option value="PromoAxB" selected>PromoAxB</option>
+	    <option value="Promo_Absoluta">Promo_Absoluta</option>
+	    <option value="Promo_Porcentual">Promo_Porcentual</option>
+  	</c:if>
+  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMO_ABSOLUTA)}">  
+  		<option value="PromoAxB">PromoAxB</option>
+	    <option value="Promo_Absoluta" selected>Promo_Absoluta</option>
+	    <option value="Promo_Porcentual">Promo_Porcentual</option>
+  	</c:if>
+  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMO_PORCENTUAL)}">  
+  		<option value="PromoAxB">PromoAxB</option>
+	    <option value="Promo_Absoluta">Promo_Absoluta</option>
+	    <option value="Promo_Porcentual" selected>Promo_Porcentual</option>
+  	</c:if>
+
   </select>
   <div class="valid-feedback">ok!</div>
   <div class="invalid-feedback">
     Por favor eligí una de las opciones. Ejemplo: PromoAxB
   </div>
 </div>
+
 <div class="mb-3">
   <label for="lista_de_atracciones" class='form-label ${promocion.errors.get("atracciones") != null ? "is-invalid" : "" }'
     >Atracciones que incluye </label
@@ -92,11 +108,16 @@
     name="lista_de_atracciones"
     required
   >
-    <option value="" disabled>
-      -- Seleccionar atracciones --
-    </option>
+    
     <c:forEach items="${atracciones}" var="atraccion">  
-      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option>
+      <c:choose>
+      <c:when test="${promocion.atracciones.contains(atraccion)}">
+      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre}"></c:out></option>
+      </c:when>
+      <c:otherwise>
+      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option> 
+      </c:otherwise>
+      </c:choose>
     </c:forEach>
   </select>
   <small class="text-success">Podés incluir más de una atracción*</small>
@@ -105,6 +126,8 @@
     Por favor eligí al menos una atracción o más de la lista.
   </div>
 </div>
+
+<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_ABSOLUTA) }'>  
 <div class="mb-3">
   <label for="costo_absoluto" class='form-label ${promocion.errors.get("costoDePromo") != null ? "is-invalid" : "" }'>Costo Reducido</label>
   <input
@@ -113,6 +136,7 @@
     min="5"
     id="costo_absoluto"
     name="costo_absoluto"
+    value="${promocion.costoDePromo}"
     placeholder="Costo reducido"
   />
   <div class="valid-feedback">ok!</div>
@@ -120,6 +144,8 @@
     Por favor, ingresá un monto válido. El mínimo es 5.
   </div>
 </div>
+</c:if>
+<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_AXB)}'>  
 <div class="mb-3">
   <label for="atraccion_gratis" class='form-label ${promocion.errors.get("atraccionGratis") != null ? "is-invalid" : "" }'>Atracción Gratis</label>
   <select
@@ -128,11 +154,15 @@
     id="atraccion_gratis"
     name="atraccion_gratis"
   >
-    <option value="">
-      -- Seleccionar atraccion gratis --
-    </option>
     <c:forEach items="${atracciones}" var="atraccion">  
-      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option>
+      <c:choose>
+      <c:when test="${promocion.atraccionGratis.equals(atraccion)}">
+      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre}"></c:out></option>
+      </c:when>
+      <c:otherwise>
+      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option> 
+      </c:otherwise>
+      </c:choose>
     </c:forEach>
   </select>
   <div class="valid-feedback">ok!</div>
@@ -140,6 +170,8 @@
     Por favor, seleccioná la atracción sin cargo.
   </div>
 </div>
+</c:if>
+<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_PORCENTUAL)}'>  
 <div class="mb-3">
   <label for="porcentaje_descuento" class='form-label ${promocion.errors.get("porcentajeDescuento") != null ? "is-invalid" : "" }'>Porcentaje de descuento</label>
   <input
@@ -150,9 +182,11 @@
     max="60"
     name="porcentaje_descuento"
     placeholder="Porcentaje de descuento"
+    value="${promocion.porcentajeDescuento}"
   />
   <div class="valid-feedback">ok!</div>
   <div class="invalid-feedback">
     Por favor, ingresá un monto de descuento asociado a la promo. El límite es 60.
   </div>
 </div>
+</c:if>

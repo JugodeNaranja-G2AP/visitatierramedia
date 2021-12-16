@@ -27,7 +27,7 @@ public abstract class Promocion implements Producto {
 		this.clase = clase;
 		
 	}
-
+	
 	public Promocion(String nombre, String descripcion, ClaseDePromo clase, Tipo tipo, List<Atraccion> atracciones) {
 		this.nombre = nombre;
 		this.descripcion = descripcion;
@@ -166,6 +166,27 @@ public abstract class Promocion implements Producto {
 		       perfil += "\t|\t\t\t\t   Costo TOTAL (c/desc):\t "  + getCosto() + " monedas de oro" + "\n";
 	return perfil;
 	}
+	
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public void setAtracciones(List<Atraccion> atracciones) {
+		this.atracciones = atracciones;
+	}
+
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public void setClase(ClaseDePromo clase) {
+		this.clase = clase;
+	}
 
 	protected abstract String descripcion();
 
@@ -173,4 +194,8 @@ public abstract class Promocion implements Producto {
 	
 	public abstract String beneficio();
 
+	public abstract boolean isValid();
+
+
 }
+

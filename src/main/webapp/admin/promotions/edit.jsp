@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +26,27 @@
               </li>
               <li class="breadcrumb-item active">Promocion</li>
             </ol>
+            
+            <c:choose>
+				<c:when test="${atraccion != null && !atraccion.isValid()}">
+					<div class="alert alert-danger alert-dismissible">
+						<button type="button" class="btn-close" data-bs-dismiss="alert"
+								aria-label="Close"></button>
+						<i class="fas fa-exclamation-triangle me-1"></i>
+						<span>Se encontraron errores al actualizar la promoción.</span>
+					</div>
+				</c:when>
+				<c:otherwise>
+				  <c:if test="${flash != null}">
+					<div class="alert alert-success alert-dismissible">
+						<button type="button" class="btn-close" data-bs-dismiss="alert"
+								aria-label="Close"></button>
+						<i class="fas fa-check-circle me-1"></i>
+						<span><c:out value="${flash}"></c:out></span>
+					</div>	
+				  </c:if>
+				</c:otherwise>
+			</c:choose>
 
             <div class="card mb-4">
               <div class="card-header">
@@ -43,7 +65,8 @@
                   ¡Todos los campos son obligatorios!
                 </div>
                 <form action="/visitatierramedia/admin/promotions/edit.do" method="post" class="needs-validation" novalidate>
-                  <jsp:include page="/admin/promotions/form.jsp"></jsp:include>
+                  <input type="hidden" name="id" value="${promocion.id}">
+                  <jsp:include page="/admin/promotions/edit-form.jsp"></jsp:include>
                   <div class="d-grid gap-2 d-md-block mt-5">
                     <button class="btn btn-warning" type="submit">Guardar</button>
                     <a onclick="window.history.back();" class="btn btn-secondary"

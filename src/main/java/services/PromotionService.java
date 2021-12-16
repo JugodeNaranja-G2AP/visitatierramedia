@@ -149,17 +149,20 @@ public class PromotionService {
 	public void delete(int id) {
 		PromocionDAO promocionDAO = DAOFactory.getPromocionDAO();
 		Promocion promocion = promocionDAO.find(id);
-		if (promocion.getClase().equals(ClaseDePromo.PROMOAXB)) {
+		ClaseDePromo clase = promocion.getClase();
+		
+		if (clase.equals(ClaseDePromo.PROMOAXB)) {
 			promocion = new PromoAxB(id, null, null, null, null, null, null);
 		}
-		if (promocion.getClase().equals(ClaseDePromo.PROMO_ABSOLUTA)) {
+		if (clase.equals(ClaseDePromo.PROMO_ABSOLUTA)) {
 			promocion = new PromoAbsoluta(id, null, null, null, null, null, id);
 		}
-		if (promocion.getClase().equals(ClaseDePromo.PROMO_PORCENTUAL)) {
+		if (clase.equals(ClaseDePromo.PROMO_PORCENTUAL)) {
 			promocion = new PromoPorcentual(id, null, null, null, null, null, id);
 		}
 
 		promocionDAO.delete(promocion);
+	
 	}
 
 }

@@ -112,10 +112,10 @@
     <c:forEach items="${atracciones}" var="atraccion">  
       <c:choose>
       <c:when test="${promocion.atracciones.contains(atraccion)}">
-      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre}"></c:out></option>
+      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option>
       </c:when>
       <c:otherwise>
-      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option> 
+      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option> 
       </c:otherwise>
       </c:choose>
     </c:forEach>
@@ -157,10 +157,10 @@
     <c:forEach items="${atracciones}" var="atraccion">  
       <c:choose>
       <c:when test="${promocion.atraccionGratis.equals(atraccion)}">
-      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre}"></c:out></option>
+      	<option value="${atraccion.nombre}" selected><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option>
       </c:when>
       <c:otherwise>
-      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option> 
+      	<option value="${atraccion.nombre}"><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option> 
       </c:otherwise>
       </c:choose>
     </c:forEach>

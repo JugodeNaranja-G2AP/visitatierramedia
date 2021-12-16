@@ -27,13 +27,14 @@ public class DeletePromotionsServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		int id = Integer.parseInt(req.getParameter("id"));
-		promotionService.delete(id);
 		
+		promotionService.delete(id);
+	
 		List<Promocion> promociones = promotionService.list();
 		req.setAttribute("promociones", promociones);
 		
 		req.setAttribute("flash", "La promoción fue eliminada exitosamente!");
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/admin/attractions/data-table.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/admin/promotions/data-table.jsp");
 		dispatcher.forward(req, resp);
 	}
 }

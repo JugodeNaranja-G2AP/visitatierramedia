@@ -65,7 +65,7 @@
                   <i class="fas fa-exclamation-triangle mx-1"></i>
                   ¡Todos los campos son obligatorios!
                 </div>
-                <form action="/visitatierramedia/admin/promotions/create.do" method="post" class="needs-validation">
+                <form action="/visitatierramedia/admin/promotions/create.do" method="post" class="needs-validation" novalidate>
                   <jsp:include page="/admin/promotions/form.jsp"></jsp:include>
                   <div class="d-grid gap-2 d-md-block mt-5">
                     <button class="btn btn-primary" type="submit">Crear</button>

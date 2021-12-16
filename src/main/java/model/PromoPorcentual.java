@@ -86,4 +86,9 @@ public class PromoPorcentual extends Promocion {
 		this.porcentajeDescuento = porcentajeDescuento;
 	}
 
+	@Override
+	public String beneficio() {
+		return porcentajeDescuento+"%";
+	}
+
 }

@@ -79,5 +79,9 @@ public class PromoAxB extends Promocion {
 	public void setAtraccionGratis(Atraccion atraccionGratis) {
 		this.atraccionGratis = atraccionGratis;
 	}
-	
+
+	@Override
+	public String beneficio() {
+		return atraccionGratis.getNombre();
+	}
 }

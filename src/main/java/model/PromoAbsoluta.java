@@ -82,4 +82,9 @@ public class PromoAbsoluta extends Promocion {
 	}
 	
 
+	@Override
+	public String beneficio() {
+		return costoDePromo+" monedas";
+	}
+
 }

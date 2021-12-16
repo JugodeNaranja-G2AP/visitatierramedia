@@ -73,17 +73,17 @@
     name="clase_de_promo"
     required
   >
-  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMOAXB)}">  
+  	<c:if test="${promocion.clase == 'PROMOAXB'}">  
   		<option value="PromoAxB" selected>PromoAxB</option>
 	    <option value="Promo_Absoluta">Promo_Absoluta</option>
 	    <option value="Promo_Porcentual">Promo_Porcentual</option>
   	</c:if>
-  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMO_ABSOLUTA)}">  
+  	<c:if test="${promocion.clase == 'PROMO_ABSOLUTA'}">  
   		<option value="PromoAxB">PromoAxB</option>
 	    <option value="Promo_Absoluta" selected>Promo_Absoluta</option>
-	    <option value="Promo_Porcentual">Promo_Porcentual</option>
+	    <option value="Promo_Porcentual"><c:out value="${promocion.clase}"></c:out></option>
   	</c:if>
-  	<c:if test="${promocion.clase.equals(ClaseDePromo.PROMO_PORCENTUAL)}">  
+  	<c:if test="${promocion.clase == 'PROMO_PORCENTUAL'}">  
   		<option value="PromoAxB">PromoAxB</option>
 	    <option value="Promo_Absoluta">Promo_Absoluta</option>
 	    <option value="Promo_Porcentual" selected>Promo_Porcentual</option>
@@ -127,7 +127,7 @@
   </div>
 </div>
 
-<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_ABSOLUTA) }'>  
+<c:if test="${promocion.clase == 'PROMO_ABSOLUTA'}">  
 <div class="mb-3">
   <label for="costo_absoluto" class='form-label ${promocion.errors.get("costoDePromo") != null ? "is-invalid" : "" }'>Costo Reducido</label>
   <input
@@ -145,7 +145,7 @@
   </div>
 </div>
 </c:if>
-<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_AXB)}'>  
+<c:if test="${promocion.clase == 'PROMOAXB'}">  
 <div class="mb-3">
   <label for="atraccion_gratis" class='form-label ${promocion.errors.get("atraccionGratis") != null ? "is-invalid" : "" }'>Atracción Gratis</label>
   <select
@@ -171,7 +171,7 @@
   </div>
 </div>
 </c:if>
-<c:if test='${promocion.clase.equals(ClaseDePromo.PROMO_PORCENTUAL)}'>  
+<c:if test="${promocion.clase == 'PROMO_PORCENTUAL'}">  
 <div class="mb-3">
   <label for="porcentaje_descuento" class='form-label ${promocion.errors.get("porcentajeDescuento") != null ? "is-invalid" : "" }'>Porcentaje de descuento</label>
   <input

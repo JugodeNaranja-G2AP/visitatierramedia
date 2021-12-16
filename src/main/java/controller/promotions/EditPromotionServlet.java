@@ -46,7 +46,7 @@ public class EditPromotionServlet extends HttpServlet {
 		req.setAttribute("atracciones", atracciones);
 
 		req.setAttribute("promocion", promocion);
-		System.out.println(promocion.getClase().equals(ClaseDePromo.PROMO_PORCENTUAL));
+		
 
 		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/admin/promotions/edit.jsp");
 		dispatcher.forward(req, resp);
@@ -94,6 +94,7 @@ public class EditPromotionServlet extends HttpServlet {
 
 			req.setAttribute("tipos", tipos);
 			req.setAttribute("atracciones", atracciones);
+			req.setAttribute("promocion", promocion);
 
 			req.setAttribute("flash", "La atracción fue editada exitosamente!");
 			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/admin/promotions/edit.jsp");

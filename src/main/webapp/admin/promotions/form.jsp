@@ -66,6 +66,7 @@
     aria-label="select clase_de_promo"
     id="clase_de_promo"
     name="clase_de_promo"
+    onchange="update()"
     required
   >
     <option value="" selected disabled>
@@ -96,7 +97,7 @@
       -- Seleccionar atracciones --
     </option>
     <c:forEach items="${atracciones}" var="atraccion">  
-      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option>
+      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option>
     </c:forEach>
   </select>
   <small class="text-success">Podés incluir más de una atracción*</small>
@@ -105,7 +106,7 @@
     Por favor eligí al menos una atracción o más de la lista.
   </div>
 </div>
-<div class="mb-3">
+<div class="mb-3 costo_absoluto">
   <label for="costo_absoluto" class='form-label ${promocion.errors.get("costoDePromo") != null ? "is-invalid" : "" }'>Costo Reducido</label>
   <input
     class="form-control"
@@ -120,7 +121,7 @@
     Por favor, ingresá un monto válido. El mínimo es 5.
   </div>
 </div>
-<div class="mb-3">
+<div class="mb-3 atraccion_gratis">
   <label for="atraccion_gratis" class='form-label ${promocion.errors.get("atraccionGratis") != null ? "is-invalid" : "" }'>Atracción Gratis</label>
   <select
     class="form-select"
@@ -132,7 +133,7 @@
       -- Seleccionar atraccion gratis --
     </option>
     <c:forEach items="${atracciones}" var="atraccion">  
-      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre}"></c:out></option>
+      <option value="${atraccion.nombre}"><c:out value="${atraccion.nombre} - ${atraccion.tipo.nombre}"></c:out></option>
     </c:forEach>
   </select>
   <div class="valid-feedback">ok!</div>
@@ -140,7 +141,7 @@
     Por favor, seleccioná la atracción sin cargo.
   </div>
 </div>
-<div class="mb-3">
+<div class="mb-3 porcentaje_descuento">
   <label for="porcentaje_descuento" class='form-label ${promocion.errors.get("porcentajeDescuento") != null ? "is-invalid" : "" }'>Porcentaje de descuento</label>
   <input
     class="form-control"

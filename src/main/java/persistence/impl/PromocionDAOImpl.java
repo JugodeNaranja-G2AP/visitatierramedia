@@ -183,11 +183,11 @@ public class PromocionDAOImpl implements PromocionDAO {
 
 			PreparedStatement statement = conn.prepareStatement(sql);
 			statement.setInt(1, promocion.getId());
-			statement.setInt(2, promocion.getId());
 			int rows = statement.executeUpdate();
 
 			return rows;
 		} catch (Exception e) {
+			e.printStackTrace();
 			throw new MissingDataException(e);
 		}
 	}

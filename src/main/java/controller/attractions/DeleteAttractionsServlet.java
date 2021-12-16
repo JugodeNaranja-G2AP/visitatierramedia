@@ -27,6 +27,7 @@ public class DeleteAttractionsServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		int id = Integer.parseInt(req.getParameter("id"));
+		
 		attractionService.delete(id);
 		
 		List<Atraccion> atracciones = attractionService.list();

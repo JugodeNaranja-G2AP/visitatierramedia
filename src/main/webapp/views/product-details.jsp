@@ -53,7 +53,7 @@
                     
                   <c:choose>
                   	<c:when test="${producto.esPromocion()}">
-                    <div class="card card-principal text-center mb-5 shadow">
+                    <div class="card text-center mb-5 shadow">
                         <div class="card-body p-0">
                             <div class="d-flex">
                                 <h5 class="card-title fs-4 pt-2 ps-2 fs-3 fw-bold me-auto text-start">Promo "<c:out value="${producto.nombre}"></c:out>"</h5>
@@ -62,7 +62,7 @@
                                     <span class="badge bg-success "><c:out value="${producto.getTipo().getNombre()}"></c:out></span>
                                 </div>
                             </div>
-                            <p class="card-text card-descripcion-detalle fs-5"><c:out value="${producto.descripcion}"></c:out></p>
+                            <p class="card-text fs-5"><c:out value="${producto.descripcion}"></c:out></p>
                             <ul class="nav nav-tabs " id="myTab" role="tablist">
                             <c:forEach items="${producto.atracciones}" var="atraccion">
                             	<c:choose>

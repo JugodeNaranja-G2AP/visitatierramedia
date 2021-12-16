@@ -24,7 +24,7 @@
 		            </ol>
 		            <div class="row">
                        <div class="col-xl-3 col-md-6">
-                           <div class="card cartaUno text-white mb-4">
+                           <div class="card bg-primary text-white mb-4">
                                <div class="card-body d-flex align-items-center justify-content-between">
                                    <div class="title">Atracciones</div>
                                    <div class="text"><c:out value="${atracciones.size()}"></c:out></div>
@@ -38,7 +38,7 @@
                            </div>
                        </div>
                        <div class="col-xl-3 col-md-6">
-                           <div class="card cartaDos text-white mb-4">
+                           <div class="card bg-warning text-white mb-4">
                                <div class="card-body d-flex align-items-center justify-content-between">
                                    <div class="title">Tipos de Atracción</div>
                                    <div class="text"><c:out value="${tipos.size()}"></c:out></div>
@@ -52,7 +52,7 @@
                            </div>
                        </div>
                        <div class="col-xl-3 col-md-6">
-                           <div class="card cartaTres text-white mb-4">
+                           <div class="card bg-success text-white mb-4">
                                <div class="card-body d-flex align-items-center justify-content-between">
                                    <div class="title">Promociones</div>
                                    <div class="text"><c:out value="${promociones}"></c:out></div>
@@ -64,7 +64,7 @@
                            </div>
                        </div>
                        <div class="col-xl-3 col-md-6">
-                           <div class="card cartaCuatro text-white mb-4">
+                           <div class="card bg-info text-white mb-4">
                                <div class="card-body d-flex align-items-center justify-content-between">
                                    <div class="title">Usuarios</div>
                                    <div class="text"><c:out value="${usuarios}"></c:out></div>
@@ -130,8 +130,8 @@
 				                      <td><c:out value="${atraccion.cupoDePersonas}"></c:out></td>
 				                      <td><c:out value="${atraccion.tipo.getNombre()}"></c:out></td>
 				                      <td><c:out value="${atraccion.imagen}"></c:out></td>
-				                      <td class="text-center">
-				                        <a class="btn btn-warning m-1" href="/visitatierramedia/admin/attractions/edit.do?id=${atraccion.id}" role="button" title="Editar">
+				                      <td>
+				                        <a class="btn btn-warning" href="/visitatierramedia/admin/attractions/edit.do?id=${atraccion.id}" role="button" title="Editar">
 				                          <i class="fas fa-pencil-alt"></i>
 				                        </a>
 				                        <!-- Button trigger modal -->

@@ -58,7 +58,7 @@
                         <label for="inputPassword">Contraseña</label>
                       </div>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-primary btn-ingresar-login p-2 fs-5" type="submit">Ingresar</button>
+                        <button class="btn btn-primary p-2 fs-5" type="submit">Ingresar</button>
                       </div>
                     </form>
                     <!-- Admin Login Form -->

@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-md navbar-color navbar-light fixed-top bgcolor"
             aria-label="Fourth navbar example">
 	 <div class="container">
-	     <a class="navbar-brand" href="/visitatierramedia/">
+	     <a class="navbar-brand" href="index.html">
 	         <img class="logo" src="/visitatierramedia/assets/img/logos/logoVTM.png" alt="" width="190px" />
 	     </a>
 	     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -16,6 +16,12 @@
 	         <ul class="navbar-nav me-auto mb-2 mb-md-0">
 	             <li class="nav-item">
 	                 <a class="nav-link nav-text fs-4 " aria-current="page" href="#destinos">Inicio</a>
+	             </li>
+	             <li class="nav-item">
+	                 <a class="nav-link nav-text fs-4 " href="#actividades">Actividades</a>
+	             </li>
+	             <li class="nav-item">
+	                 <a class="nav-link nav-text fs-4 " href="#experiencias">Experiencias</a>
 	             </li>
 	             <li class="nav-item">
 	                 <c:choose>
@@ -66,12 +72,12 @@
 	         <!-- FIN Perfil Iniciado  -->
 	      </c:when>  
 	      <c:otherwise>
-	         <!--  Botï¿½n de inicio de sesiï¿½n -->
+	         <!--  Botón de inicio de sesión -->
 	          <a href="/visitatierramedia/login" class="btn btn-log d-flex align-items-center text-decoration-none" role="button">
 	              <img class="logoInicio text-white pe-1" src="/visitatierramedia/assets/img/icons/logIcoWhite.png" alt="icono de login">
 	              Iniciar Sesión
 	          </a>
-			<!--  Fin botï¿½n de inicio de sesiï¿½n -->
+			<!--  Fin botón de inicio de sesión -->
 		  </c:otherwise>
 		</c:choose>
 	         <!-- Modal -->
@@ -114,7 +120,7 @@
 					                class="form-control"
 					                id="inputPassword"
 					                type="password"
-					                placeholder="Contraseï¿½a"
+					                placeholder="Contraseña"
 					                minlength="8"
 					                name="password"
 					                required

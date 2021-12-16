@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!-- Navbar para pï¿½gs donde el usuario ya estï¿½ loguedo -->
+<!-- Navbar para págs donde el usuario ya está loguedo -->
 
 <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-color navbar-light fixed-top bgcolor" aria-label="Fourth navbar example">
       <div class="container">
-        <a class="navbar-brand" href="/visitatierramedia/">
+        <a class="navbar-brand" href="index.html">
           <img class="logo" src="/visitatierramedia/assets/img/logos/logoVTM.png" alt="" width=190px />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
@@ -16,6 +16,9 @@
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link fs-4 nav-text" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text fs-4 " href="#actividades">Actividades</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-4 nav-text" href="/visitatierramedia/products.do">Ofertas</a>

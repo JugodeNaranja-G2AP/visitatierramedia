@@ -16,7 +16,7 @@ public class OrdenadorDeProducto implements Comparator<Producto> {
 		// Según tipo preferido de atracción
 		if (o1.getTipo().equals(tipoAtraccionPreferida) && !o2.getTipo().equals(tipoAtraccionPreferida)) {
 			return -1;
-		} else if (o1.getTipo() != tipoAtraccionPreferida && o2.getTipo() == tipoAtraccionPreferida) {
+		} else if (!o1.getTipo().equals(tipoAtraccionPreferida) && o2.getTipo().equals(tipoAtraccionPreferida)) {
 			return 1;
 		}
 

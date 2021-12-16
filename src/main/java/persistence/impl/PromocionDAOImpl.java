@@ -177,13 +177,17 @@ public class PromocionDAOImpl implements PromocionDAO {
 	@Override
 	public int delete(Promocion promocion) {
 		try {
-			String sql = "DELETE FROM lista_atracciones_por_promo WHERE promo_id = ?;\n"
-					+ "DELETE FROM promociones WHERE id = ?;";
+			String sql = "DELETE FROM lista_atracciones_por_promo WHERE promo_id = ?;";
+			String sqlPromo = "DELETE FROM promociones WHERE id = ?;";
+
 			Connection conn = ConnectionProvider.getConnection();
 
 			PreparedStatement statement = conn.prepareStatement(sql);
+			PreparedStatement statement2 = conn.prepareStatement(sqlPromo);
 			statement.setInt(1, promocion.getId());
+			statement2.setInt(1, promocion.getId());
 			int rows = statement.executeUpdate();
+			statement2.executeUpdate();
 
 			return rows;
 		} catch (Exception e) {

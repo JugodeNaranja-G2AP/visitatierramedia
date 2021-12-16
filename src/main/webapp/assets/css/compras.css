@@ -24,7 +24,7 @@ body {
 }
 
 .btn-group>.btn-menu>img {
-  width: 40px;
+  width : 40px;
   height: 40px;
 }
 
@@ -43,9 +43,9 @@ body {
 }
 
 .btn-primary:hover {
-  color: #000;
+  color           : #000;
   background-color: #ff9900;
-  border-color: #edbc71;
+  border-color    : #edbc71;
 }
 
 #btn-compra {
@@ -68,7 +68,7 @@ body {
   box-shadow: none;
 }
 
-.btn-comprar{
+.btn-comprar {
   font-weight: 500;
 }
 
@@ -155,7 +155,7 @@ body {
 /* Footer */
 
 a:hover {
-  color: darkgoldenrod;
+  color: #d35f5f;
 }
 
 .list-group-item {
@@ -169,40 +169,97 @@ a:hover {
 .logoJdN {
   width: 150px;
 }
-a.list-group-item.bg-transparent {
-font-weight: 600;
+
+.footer-text {
+  font-weight: 600;
+}
+
+.btn-redes:hover {
+  color           : #000;
+  background-color: #e36868;
+  border-color    : #e36868;
+}
+
+.btn-redes {
+  background-color: rgba(0, 0, 0, 0.041);
+  border-color    : transparent;
+  color           : rgb(0, 0, 0);
+}
+
+.cuerpo-footer {
+  background-color: #d7d5c1
 }
 
 /* Subtitulos de páginas */
 .subtitulo {
   font-family: 'Middleearth';
-  font-size  : 4.5vh;
+  font-size  : 3.7vh;
   font-weight: 900;
   color      : rgb(0, 0, 0);
 }
 
-.card-big{
+.card-big {
   object-fit: cover;
-  height: 242.23px;
+  height    : 242.23px;
 }
 
- .card-foto{
+.card-foto {
   object-fit: cover;
-  height: 242.23px;
-  width: 430.61px;
-} 
+  height    : 242.23px;
+  width     : 430.61px;
+}
 
- .card-datos{
+.card-datos {
   text-align: left;
-} 
+}
 
-.dato-oro{
-  color: rgb(255, 145, 0);
+.dato-oro {
+  color      : rgb(255, 145, 0);
   font-weight: 500;
 }
 
 /* Alerta del mensaje de error de la pág detalles */
 .red-alert {
   background-color: #f8d7da;
-  color: #842029;
+  color           : #842029;
+}
+
+/*ofertas*/
+.card-oferta {
+  min-height: 500px;
+  transition: 0.2s ease;
+}
+
+.card-oferta:hover{
+  box-shadow: 0px 0px 20px 0px #adb5bd4f
+}
+
+#img-ofertas {
+  object-fit     : cover;
+  object-position: center;
+  height         : 235px;
+  overflow       : hidden;
+}
+
+.btn-detalle {
+  background-color: #edbc71;
+  border-color    : #edbc71;
+  font-weight     : 500;
+  font-size       : 17px;
+}
+
+.card-oferta:hover .btn-detalle {
+  background-color: #ffac31;
+  border-color    : #ffac31;
+}
+
+/*detalle*/
+.card-principal {
+  margin   : auto;
+  max-width: 960px;
+}
+
+.card-descripcion-detalle {
+  font-size  : 15px;
+  font-weight: 400;
 }

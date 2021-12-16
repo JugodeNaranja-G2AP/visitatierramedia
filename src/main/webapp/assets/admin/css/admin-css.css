@@ -1,0 +1,96 @@
+.bg-image {
+  background: linear-gradient(rgba(83, 105, 118, 0.5), rgba(83, 105, 118, 0.5)),
+    url('/visitatierramedia/assets/img/tm-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size   : cover;
+  -o-background-size     : cover;
+  background-size        : cover;
+  background-color       : #fafafa;
+}
+
+.navbar-admin {
+  padding   : 0;
+  z-index   : 1100;
+  box-shadow: 0px 3px 4px 2px rgb(0 0 0 / 20%);
+}
+
+.side-admin {
+  background: rgb(86 98 87);
+}
+
+.titulos-tabla {
+  color: #fbe282 !important;
+}
+
+.side-lista:hover {
+  color: bisque !important;
+}
+
+.btn-danger {
+  background-color: #bd0000;
+  border-color    : #bd0000;
+}
+
+.btn-danger:hover {
+  background-color: #ff0000;
+  border-color    : #ff0000;
+}
+
+.btn-warning {
+  background-color: #d4a300;
+  border-color    : #d4a300;
+}
+
+.btn-warning:hover {
+  background-color: #ffc400;
+  border-color    : #ffc400;
+}
+
+.cartaUno {
+  background-color: rgb(231, 162, 59);
+}
+
+.cartaDos {
+  background-color: rgb(138, 122, 71);
+}
+
+.cartaTres {
+  background-color: rgb(133, 118, 96);
+}
+
+.cartaCuatro {
+  background-color: rgb(126, 121, 113);
+}
+
+.dataTable-pagination li.active a {
+  z-index         : 3;
+  color           : #fff;
+  background-color: #d4a300;
+  border-color    : #d4a300;
+}
+
+.dataTable-pagination .active a,
+.dataTable-pagination .active a:focus,
+.dataTable-pagination .active a:hover {
+  background-color: #d4a400;
+  border-color    : #d4a400
+}
+
+.dataTable-pagination-list>a {
+  color: #d4a300;
+}
+
+.dataTable-pagination-list a {
+  color: #d4a300;
+}
+
+.dataTable-pagination a:hover {
+  z-index: 2;
+  color: #d4a300;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+.btn-ingresar-login:hover{
+  background-color: #f19408;
+}

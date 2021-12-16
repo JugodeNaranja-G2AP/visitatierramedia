@@ -154,7 +154,7 @@
 	                              </div>
 	                              <div class="modal-footer">
 	                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-	                                <a class="btn btn-danger" href="/visitatierramedia/admin/promotions/delete.do?id=${promotion.id}" role="button">Borrar</a>
+	                                <a class="btn btn-danger" href="/visitatierramedia/admin/promotions/delete.do?id=${promocion.id}" role="button">Borrar</a>
 	                              </div>
 	                            </div>
 	                          </div>

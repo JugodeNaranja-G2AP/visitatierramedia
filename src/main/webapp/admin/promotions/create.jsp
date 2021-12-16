@@ -5,6 +5,7 @@
 <html>
 <head>
 <jsp:include page="/partials/admin/head.jsp"></jsp:include>
+<script type="text/javascript" src="/visitatierramedia/assets/admin/js/create-promotions-form.js" defer></script>
 </head>
 <body class="sb-nav-fixed">
 	<!-- nav -->

@@ -25,6 +25,15 @@
 	              <li class="breadcrumb-item active">Promociones</li>
 	            </ol>
 	            
+	            <c:if test="${flash != null}">
+					<div class="alert alert-success alert-dismissible">
+						<button type="button" class="btn-close" data-bs-dismiss="alert"
+								aria-label="Close"></button>
+						<i class="fas fa-check-circle me-1"></i>
+						<span><c:out value="${flash}"></c:out></span>
+					</div>	
+				</c:if>
+	            
 	            <div class="mb-4">
 					<a href="/visitatierramedia/admin/promotions/create.do" class="btn btn-primary" role="button"> 
 						<i class="fas fa-plus"></i> 
@@ -80,11 +89,11 @@
                           <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${promocion.id}" aria-expanded="true" aria-controls="collapsedOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${promocion.id}" aria-expanded="true" aria-controls="collapseOne">
                                   Atracciones
                                 </button>
                               </h2>
-                              <div id="collapse${promocion.id}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div id="collapse${promocion.id}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <ul>
                                   	<c:forEach items="${promocion.atracciones}" var="atraccion">
@@ -98,6 +107,7 @@
                           </div>
 	                      </td>
 	                      <c:choose>
+
 	                      	<c:when test="${promocion.clase == 'PROMOAXB'}">        		
 	                      	  <td><c:out value="${promocion.beneficio()}"></c:out></td>
 	                      	</c:when>
@@ -122,8 +132,8 @@
 	                      	</c:otherwise>  
 	                      </c:choose>
 	                      
-	                      <td class = "text-center">
-	                      	<a class="btn btn-warning m-1" href="/visitatierramedia/admin/promotions/edit.jsp" role="button" title="Editar">
+	                      <td>
+	                      	<a class="btn btn-warning" href="/visitatierramedia/admin/promotions/edit.do?id=${promocion.id}" role="button" title="Editar">
 	                          <i class="fas fa-pencil-alt"></i>
 	                        </a>
 	                        <!-- Button trigger modal -->

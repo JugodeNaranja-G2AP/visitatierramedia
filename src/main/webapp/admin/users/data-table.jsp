@@ -55,7 +55,7 @@
 	                      <th>Tipo de atracción preferida</th>
 	                      <th>Imagen</th>
 	                      <th>Itinerario</th>
-	                      <th>Acciones</th>
+	                      <th data-sortable="false">Acciones</th>
 	                    </tr>
 	                  </thead>
 	                  <tfoot>
@@ -66,7 +66,7 @@
 	                      <th>Tipo de atracción preferida</th>
 	                      <th>Imagen</th>
 	                      <th>Itinerario</th>
-	                      <th>Acciones</th>
+	                      <th data-sortable="false">Acciones</th>
 	                    </tr>
 	                  </tfoot>
 	                  <tbody>

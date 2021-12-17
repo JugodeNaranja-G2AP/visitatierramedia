@@ -53,7 +53,7 @@
 				                      <th>Cupo</th>
 				                      <th>Tipo</th>
 				                      <th>Imagen</th>
-				                      <th>Acciones</th>
+				                      <th data-sortable="false">Acciones</th>
 				                    </tr>
 				                  </thead>
 				                  <tfoot>
@@ -65,7 +65,7 @@
 				                      <th>Cupo</th>
 				                      <th>Tipo</th>
 				                      <th>Imagen</th>
-				                      <th>Acciones</th>
+				                      <th data-sortable="false">Acciones</th>
 				                    </tr>
 				                  </tfoot>
 				                  <tbody>

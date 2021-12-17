@@ -49,13 +49,13 @@
 		                  <thead>
 		                    <tr>
 		                      <th>Tipo</th>
-		                      <th>Acciones</th>
+		                      <th data-sortable="false">Acciones</th>
 		                    </tr>
 		                  </thead>
 		                  <tfoot>
 		                    <tr>
 		                      <th>Tipo</th>
-		                      <th>Acciones</th>
+		                      <th data-sortable="false">Acciones</th>
 		                    </tr>
 		                  </tfoot>
 		                  <tbody>

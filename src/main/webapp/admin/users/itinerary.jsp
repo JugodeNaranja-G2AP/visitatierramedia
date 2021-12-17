@@ -31,7 +31,7 @@
 	            <div class="card mb-4">
 	              <div class="card-header">
 	                <i class="fas fa-table me-1"></i>
-	                DataTable Promociones
+	                Tabla de compras de Promociones
 	              </div>
 	              <div class="card-body">
 	                <table class="table-striped" id="datatablesSimple">
@@ -74,25 +74,25 @@
                           <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                   Atracciones
                                 </button>
                               </h2>
-                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <ul>
                                   	<c:forEach items="${producto.obtenerAtracciones()}" var="atraccion">
                                     <li>><c:out value="${atraccion.nombre}"></c:out></li>
                                     </c:forEach>
                                   </ul>
-                                  <div class="text-center"><a href="/visitatierramedia/admin/promotions/AttractionList.do?id=${producto.id}">Ver mas -></a></div>
+                                  <div class="text-center"><a href="/visitatierramedia/admin/promotions/listattractions.do?id=${producto.id}">Ver mas -></a></div>
                                 </div>
                               </div>
                             </div>
                           </div>
 	                      </td>
 	                      <c:choose>
-	                      	<c:when test="${producto.clase =='PROMOAXB')}">        		
+	                      	<c:when test="${producto.clase == 'PROMOAXB'}">        		
 	                      	  <td><c:out value="${producto.beneficio()}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
@@ -143,7 +143,7 @@
 	            <div class="card mb-4">
 	              <div class="card-header">
 	                <i class="fas fa-table me-1"></i>
-	                DataTable Atracciones
+	                Tabla de compras de Atracciones
 	              </div>
 	              <div class="card-body">
 	                <table class="table-striped" id="datatablesSimple2">

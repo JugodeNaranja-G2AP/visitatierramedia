@@ -156,7 +156,7 @@
 					</c:when>
 					<c:otherwise>
 					<!-- 	Atracción -->
-                    <div class="card my-3 shadow">
+                    <div class="card card-principal my-3 shadow">
                         <img src='<c:out value="${producto.imagen}"></c:out>' class="card-img-top card-big pt-3" alt="minasT">
                         <div class="card-body">
                             <div class="d-flex ">

@@ -71,7 +71,6 @@
 }
 
 .nav-link {
-    /* font-family: 'Middleearth';*/
     color      : rgb(110, 110, 110);
     font-weight: 500;
     font-size  : 20px;
@@ -154,17 +153,24 @@
     height          : 100vh;
 }
 
+.btn-inicio-oferta{
+	background-color: rgb(235, 180, 97);
+}
+
+.btn-inicio-oferta:hover{
+	background-color: rgb(255, 164, 26);
+}
+
 .card-img-overlay,
 .card-img-top {
     transition: all 0.2s ease;
-    cursor    : pointer;
 }
 
 .cardInter:hover .card-img-top {
     transform: scale(1.035);
 }
 
-.cardInter:hover .card-img-overlay {
+.cardInter:hover .titulo-actividades {
     transform: scale(1.25) translate(32px, -25px);
 }
 
@@ -176,7 +182,6 @@
 .card-big-txt,
 .card-big {
     transition: all 0.2s ease;
-    cursor    : pointer;
 }
 
 .cardInter:hover .card-big {
@@ -190,7 +195,44 @@
 .cardInter {
     overflow  : hidden;
     object-fit: cover;
+}
 
+.wrapper::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	z-index: 1;
+	/* cursor: pointer; */
+	opacity: 0;
+	transition: .2s ease;
+}
+
+.card-img-overlay {
+	z-index: 4
+}
+
+.desc-inv{
+	opacity: 0;
+	transition: 0.2s ease;
+	font-weight: 400;
+	color: rgb(253, 235, 208);
+	text-shadow:0px 0px 13px #ffecbd;
+}
+
+.cardInter:hover .desc-inv {
+	opacity: 1;
+}
+
+.card-titulo {
+	z-index: 2;
+}
+
+.cardInter:hover .wrapper::before {
+	opacity: 1;
 }
 
 .card {
@@ -207,19 +249,41 @@
 }
 
 /* Footer */
-
 a:hover {
-    color: darkgoldenrod;
+	color: #d35f5f;
 }
 
 .list-group-item {
-    border: none;
+	border: none;
 }
 
 .footerDeFooter {
-    background-color: #443131;
+	background-color: #d35f5f;
 }
 
 .logoJdN {
-    width: 150px;
+	width: 150px;
+}
+
+.footer-text {
+	font-weight: 600;
+}
+
+.btn-redes:hover {
+    color: #000;
+    background-color: #e36868;
+    border-color: #e36868;
+}
+.cuerpo-footer{
+	background-color: #d7d5c1
+}
+
+/* tarjetas */
+
+.tarjetas-c1 {
+	background-color:#cbcbbc;
+}
+
+.tarjetas-c2 {
+	background-color:#436a59;
 }

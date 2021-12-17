@@ -157,7 +157,7 @@
 					              <label for="inputPassword">Contraseña</label>
 					            </div>
 					            <button
-					              class="btn btn-primary btn-lg w-100"
+					              class="btn btn-inicio-oferta btn-lg w-100"
 					              type="submit"
 					              >Ingresar</button
 					            >
@@ -165,7 +165,7 @@
 					        </div>
 					        <hr />
 					        <div class="text-center py-3">
-					          <div class="small"><p>Ingresá para continuar</p></div>
+					          <div class="small"><p>¡Ingresá para obtener descuentos especiales!</p></div>
 					        </div>         
 					      </div>
 					    </div>
@@ -270,46 +270,184 @@
             </section>
         </div>
         <section class=" seccion mx-auto my-md-5 " id="actividades">
-            <div class="container text-center">
-                <div class="card-group ">
-                    <div class="col-12 col-md-4">
-                        <div class="card h-100 ms-1 me-1">
-                            <h4 class="subtitulo">Actividades</h4>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card cardInter ps-1 pe-1 pb-1">
-                            <div class="wrapper h-100 text-white">
-                                <img class="card-img-top h-100" src="/visitatierramedia/assets/img/TM-Fotos/lacomarca3.jpg" alt="Comarca">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <h3 class="card-title">Gastronomía</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="card cardInter ps-1 pe-1 pb-1">
-                            <div class="wrapper h-100 text-white">
-                                <img class="card-img-top h-100" src="/visitatierramedia/assets/img/TM-Fotos/Belerian.jpg" alt="fotoPaisaje">
-                                <div class="card-img-overlay d-flex align-items-end">
-                                    <h3 class=" card-title">Paisajismo</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12">
-                        <div class="card cardInter h-100 ps-1 pe-1 pt-1">
-                            <div class="wrapper h-100 text-white">
-                                <img src="/visitatierramedia/assets/img/TM-Fotos/gondor2.jpg" class="card-img-top card-big" alt="fotoAventura">
-                                <div class="card-img-overlay card-big-txt d-flex align-items-end">
-                                    <h3 class="card-title">Aventura</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section> 
-       
+			<div class="container text-center">
+				<div class="card-group ">
+					<div class="col-12 col-md-4">
+						<div class="card h-100 ms-1 me-1">
+							<h4 class="subtitulo">Actividades</h4>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card cardInter ps-1 pe-1 pb-1">
+							<div class="wrapper h-100 text-white">
+								<img class="card-img-top h-100"
+									src="/visitatierramedia/assets/img/TM-Fotos/lacomarca3.jpg" alt="Comarca">
+								<div class="card-img-overlay desc-inv d-flex justify-content-end align-items-start">
+									<p class="fst-italic card-title">Los mejores y variados festivales gastronómicos.</p>
+								</div>
+
+								<div class="card-img-overlay titulo-actividades d-flex align-items-end">
+									<h3 class="card-title ">Gastronomía</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card cardInter ps-1 pe-1 pb-1">
+							<div class="wrapper h-100 text-white">
+								<img class="card-img-top h-100"
+									src="/visitatierramedia/assets/img/TM-Fotos/Belerian.jpg" alt="fotoPaisaje">
+									<div class="card-img-overlay desc-inv d-flex justify-content-end align-items-start">
+										<p class="fst-italic card-title">Sol, lluvia, nieve, frío, calor... Lo que busques, todo el año.</p>
+									</div>
+								<div class="card-img-overlay titulo-actividades d-flex align-items-end">
+									<h3 class=" card-title ">Paisajismo</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-12">
+						<div class="card cardInter h-100 ps-1 pe-1 pt-1">
+							<div class="wrapper h-100 text-white">
+								<img src="/visitatierramedia/assets/img/TM-Fotos/gondor2.jpg"
+									class="card-img-top card-big" alt="fotoAventura">
+									<div class="card-img-overlay desc-inv d-flex justify-content-end align-items-start">
+										<p class="fst-italic card-title">¡Viví las experiencias más divertidas y retantes!</p>
+									</div>
+								<div
+									class="card-img-overlay card-big-txt titulo-actividades d-flex align-items-end">
+									<h3 class="card-title ">Aventura</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class=" seccion container mx-auto my-md-5 align-items-center justify-content-center  alto-75"
+					id="experiencias">
+					<h4 class="subtitulo text-center">Experiencias de turistas</h4>
+					<section class="container d-flex align-items-center justify-content-center "></section>
+					<div class="row">
+
+						<div class="col-12 col-lg-9 ">
+							<div class="row">
+								<div class="col-12 col-lg-8 p-2">
+									<article class="card h-100 tarjetas-c1  shadow fondo-quote">
+										<div class="card-body">
+											<div class="d-flex mb-3">
+												<img src="/visitatierramedia/assets/img/profile/5.jpg" alt="fotoPerfil"
+													class="imgPerfil border border-secundary 
+                                        border-3 rounded-circle">
+												<div class="ps-3">
+													<h6 class="m-0">Susan</h6>
+													<p class="m-0 h6">Marruecos</p>
+												</div>
+											</div>
+											<div>
+												<p class="h6">Hola! Soy Susan, y tengo la suerte de ser
+													una viajera experimentada. Conozco casi todo el mundo
+													pero nunca había estado en un lugar igual.</p>
+												<p class="fs-6 lh-1">Los paisajes, la calidez de los habitantes,
+													la energía del lugar hicieron de mi viaje, la mejor experiencia
+													que viví!</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="col-12 col-lg-4 p-2">
+									<article class="card h-100 tarjetas-c1 shadow">
+										<div class="card-body">
+											<div class="d-flex mb-3">
+												<img src="/visitatierramedia/assets/img/profile/3.jpg" alt="fotoPerfil"
+													class="imgPerfil border border-secundary 
+                                        border-3 rounded-circle">
+												<div class="ps-3">
+													<h6 class="m-0">Peter</h6>
+													<p class="m-0 h6">Escocia</p>
+												</div>
+											</div>
+											<div>
+												<p class="fs-6 lh-1">Buenas! Soy Peter. Tuve el gusto de poder venir a
+													Tierra Media a vacacionar con mi familia y no podemos dejar de
+													recomendar
+													el lugar. Nos quedamos 20 días, pero se hicieron cortos...
+													Volveremos!</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="col-12 col-lg-4 p-2">
+									<article class="card h-100 tarjetas-c2 text-white shadow">
+										<div class="card-body">
+											<div class="d-flex mb-3">
+												<img src="/visitatierramedia/assets/img/profile/6.jpg" alt="fotoPerfil"
+													class="imgPerfil border border-secundary 
+                                        border-3 rounded-circle">
+												<div class="ps-3">
+													<h6 class="m-0">Zenka</h6>
+													<p class="m-0 h6">Polonia</p>
+												</div>
+											</div>
+											<div>
+												<p class="fs-6 lh-1">Desde chica quería conocer Tierra Media y al fin
+													tuve la oportunidad. Es todo lo que esperaba y más! Disfrutamos
+													mucho
+													con mi pareja. Es muy amplio! Hay de todo! Estamos pensando en
+													mudarnos
+													aquí.</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="col-12 col-lg-8 p-2">
+									<article class="card h-100 tarjetas-c2 text-white shadow">
+										<div class="card-body">
+											<div class="d-flex mb-3">
+												<img src="/visitatierramedia/assets/img/profile/4.jpg" alt="fotoPerfil"
+													class="imgPerfil border border-secundary 
+                                        border-3 rounded-circle">
+												<div class="ps-3">
+													<h6 class="m-0">Liziqi</h6>
+													<p class="m-0 h6">China</p>
+												</div>
+											</div>
+											<div>
+												<p class="h6">Es una tierra maravillosa y no exagero para nada.
+													Se siente mágico desde el primer momento. Fuimos en invierno y
+													la temperatura es muy soportable. La picada en la comarca es una
+													cosa de locos!</p>
+												<p class="fs-6 lh-1">Y la gente es muy apasionada sobre su tierra!
+													Saben inglés y muchos Chino, por lo cual comunicarnos no fue
+													una dificultad. Vengan!</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-3 p-2">
+							<article class="card h-100 tarjetas-c1 shadow">
+								<div class="card-body">
+									<div class="d-flex mb-3">
+										<img src="/visitatierramedia/assets/img/profile/1.jpg" alt="fotoPerfil" class="imgPerfil border border-secundary 
+                                border-3 rounded-circle">
+										<div class="ps-3">
+											<h6 class="m-0">Javier</h6>
+											<p class="m-0 h6">España</p>
+										</div>
+									</div>
+									<div>
+										<p class="h6">Bueno, que decir. Lo único malo es la distancia desde Madrid, pero
+											es el mejor viaje que he hecho. </p>
+										<p class="fs-6 lh-1">Los paseos por la montaña son espectaculares
+											y los paisajes valen todo lo que pagué. Y es una forma de decir, porque
+											tiene precios muuuy accesibles! Consejo, compren muuucho vino.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
     </main>
 
 	<jsp:include page="/partials/footer.jsp"></jsp:include>

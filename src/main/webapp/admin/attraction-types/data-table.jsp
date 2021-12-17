@@ -62,8 +62,8 @@
 		                  <c:forEach items="${tiposDeAtraccion}" var="tipo">
 		                    <tr>
 		                      <td><c:out value="${tipo.nombre}"></c:out></td>
-		                      <td>
-		                        <a class="btn btn-warning" href="/visitatierramedia/admin/attraction-types/edit.do?id=${tipo.id}" role="button" title="Editar">
+		                      <td class="text-center">
+		                        <a class="btn btn-warning m-1" href="/visitatierramedia/admin/attraction-types/edit.do?id=${tipo.id}" role="button" title="Editar">
 		                          <i class="fas fa-pencil-alt"></i>
 		                        </a>
 								<!--  Button trigger modal -->

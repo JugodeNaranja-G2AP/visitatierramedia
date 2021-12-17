@@ -15,7 +15,7 @@
 	     <div class="navbar-collapse collapse" id="navbarsExample04">
 	         <ul class="navbar-nav me-auto mb-2 mb-md-0">
 	             <li class="nav-item">
-	                 <a class="nav-link nav-text fs-4 " aria-current="page" href="#destinos">Inicio</a>
+	                 <a class="nav-link nav-text fs-4 " aria-current="page" href="/visitatierramedia/">Inicio</a>
 	             </li>
 	             <li class="nav-item">
 	                 <c:choose>

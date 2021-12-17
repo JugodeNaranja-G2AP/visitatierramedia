@@ -19,7 +19,7 @@
 		<div class="navbar-collapse collapse" id="navbarsExample04">
 			<ul class="navbar-nav me-auto mb-2 mb-md-0">
 				<li class="nav-item"><a class="nav-link fs-4 nav-text"
-					aria-current="page" href="#">Inicio</a></li>
+					aria-current="page" href="/visitatierramedia/">Inicio</a></li>
 				<li class="nav-item"><a class="nav-link fs-4 nav-text"
 					href="/visitatierramedia/products.do">Ofertas</a></li>
 			</ul>

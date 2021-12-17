@@ -335,7 +335,7 @@
 									<article class="card h-100 tarjetas-c1  shadow fondo-quote">
 										<div class="card-body">
 											<div class="d-flex mb-3">
-												<img src="/visitatierramedia/assets/img/profile/5.jpg" alt="fotoPerfil"
+												<img src="https://res.cloudinary.com/tierra-media/image/upload/v1639756653/perfiles/5_mwuz67.jpg" alt="fotoPerfil"
 													class="imgPerfil border border-secundary 
                                         border-3 rounded-circle">
 												<div class="ps-3">
@@ -358,7 +358,7 @@
 									<article class="card h-100 tarjetas-c1 shadow">
 										<div class="card-body">
 											<div class="d-flex mb-3">
-												<img src="/visitatierramedia/assets/img/profile/3.jpg" alt="fotoPerfil"
+												<img src="https://res.cloudinary.com/tierra-media/image/upload/v1639756653/perfiles/3_nz6noa.jpg" alt="fotoPerfil"
 													class="imgPerfil border border-secundary 
                                         border-3 rounded-circle">
 												<div class="ps-3">
@@ -380,7 +380,7 @@
 									<article class="card h-100 tarjetas-c2 text-white shadow">
 										<div class="card-body">
 											<div class="d-flex mb-3">
-												<img src="/visitatierramedia/assets/img/profile/6.jpg" alt="fotoPerfil"
+												<img src="https://res.cloudinary.com/tierra-media/image/upload/v1639756653/perfiles/6_t59o5i.jpg" alt="fotoPerfil"
 													class="imgPerfil border border-secundary 
                                         border-3 rounded-circle">
 												<div class="ps-3">
@@ -403,7 +403,7 @@
 									<article class="card h-100 tarjetas-c2 text-white shadow">
 										<div class="card-body">
 											<div class="d-flex mb-3">
-												<img src="/visitatierramedia/assets/img/profile/4.jpg" alt="fotoPerfil"
+												<img src="https://res.cloudinary.com/tierra-media/image/upload/v1639756653/perfiles/4_m2r5wj.jpg" alt="fotoPerfil"
 													class="imgPerfil border border-secundary 
                                         border-3 rounded-circle">
 												<div class="ps-3">
@@ -429,7 +429,7 @@
 							<article class="card h-100 tarjetas-c1 shadow">
 								<div class="card-body">
 									<div class="d-flex mb-3">
-										<img src="/visitatierramedia/assets/img/profile/1.jpg" alt="fotoPerfil" class="imgPerfil border border-secundary 
+										<img src="https://res.cloudinary.com/tierra-media/image/upload/v1639756653/perfiles/1_dnvr6b.jpg" alt="fotoPerfil" class="imgPerfil border border-secundary 
                                 border-3 rounded-circle">
 										<div class="ps-3">
 											<h6 class="m-0">Javier</h6>

@@ -17,7 +17,8 @@
 <link rel="stylesheet" href="/visitatierramedia/assets/sass/custom.css">
 <link href="/visitatierramedia/assets/css/compras.css" rel="stylesheet">
 
-<script type="text/javascript" src="/visitatierramedia/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js " defer></script>
+<script defer src="/visitatierramedia/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 <title>Aviso Legal</title>
 </head>
 <body>

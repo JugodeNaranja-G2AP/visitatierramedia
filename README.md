@@ -45,10 +45,15 @@ La Secretaría de Turismo de la Tierra Media ha decidido crear un sistema para p
 - Valinor y Bosque Fangorn con un 20% de descuento.
 
 ## Usuarios:
-- **Legolas**. Le gusta la aventura. Tiene un presupuesto de 100 monedas de oro y dispone de 10 horas.
+- **Legolas**. Le gusta la aventura. Tiene un presupuesto de 100 monedas de oro y dispone de 10 horas. 
 - **Gimli**. Su preferencia son los banquetes. Puede gastar 95 monedas de oro y dispone de 8 horas.
 - **Arwen**. Le gustan los paisajes. Puede gastar 70 monedas de oro y dispone de tan sólo 6 horas .
 - **Bilbo**. Le gusta comer como los dioses. Tiene un presupuesto de 120 monedas de oro y dispone de 9 horas.
 - **Elrond**.  Le gusta pasear en el campo. Puede gastar 73 monedas de oro y dispone de 7 horas.
 -  **Aragorn**.  Su predilección son las aventuras. Posee un presupuesto de 112 monedas de oro y tiene 11 horas disponibles.
+-  La contraseña para todos los usuarios es: tierraMedia$12 .
+## Admins:
+- **Gandalf**.  Contraseña: Admintm$3 .
+- **Galadriel** Contraseña: Admintm$3 .
+- **Eowyn**     Contraseña: Admintm$3 .
 

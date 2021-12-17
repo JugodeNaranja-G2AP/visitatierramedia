@@ -81,7 +81,7 @@
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <ul>
-                                  	<c:forEach items="${productos.atracciones}" var="atraccion">
+                                  	<c:forEach items="${producto.obtenerAtracciones()}" var="atraccion">
                                     <li>><c:out value="${atraccion.nombre}"></c:out></li>
                                     </c:forEach>
                                   </ul>
@@ -92,24 +92,24 @@
                           </div>
 	                      </td>
 	                      <c:choose>
-	                      	<c:when test="${producto.clase.equals(PROMOAXB)}">        		
-	                      	  <td><c:out value="${producto.atraccionGratis()}"></c:out></td>
+	                      	<c:when test="${producto.clase =='PROMOAXB')}">        		
+	                      	  <td><c:out value="${producto.beneficio()}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
 	                      		<td>----</td>
 	                      	</c:otherwise>
 	                      </c:choose>
 	                      <c:choose>
-	                      	<c:when test="${producto.clase.equals(PROMO_ABSOLUTA)}">
-	                      	  <td><c:out value="${promocion.costoDePromo}"></c:out></td>
+	                      	<c:when test="${producto.clase =='PROMO_ABSOLUTA'}">
+	                      	  <td><c:out value="${producto.beneficio()}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
 	                      		<td>----</td>
 	                      	</c:otherwise>
 	                      </c:choose>
 	                      <c:choose>
-	                      	<c:when test="${producto.clase.equals(PROMO_PORCENTUAL)}">
-	                      	  <td><c:out value="${producto.porcentajeDescuento}"></c:out></td>
+	                      	<c:when test="${producto.clase =='PROMO_PORCENTUAL'}">
+	                      	  <td><c:out value="${producto.beneficio()}"></c:out></td>
 	                      	</c:when>
 	                      	<c:otherwise>
 	                      		<td>----</td>

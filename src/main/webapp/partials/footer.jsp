@@ -33,7 +33,7 @@
 	<div class="row footerDeFooter p-4 d-flex flex-wrap align-items-center">
 	    <div class="col-12 col-md-6 ">
 	        <div class="d-none d-md-block justify-content-start text-white">
-	            ï¿½ 2021 Copyright:
+	            © 2021 Copyright:
 	            VisitaTierraMedia
 	        </div>
 	    </div>

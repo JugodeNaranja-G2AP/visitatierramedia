@@ -42,7 +42,7 @@
 		            <div class="card mb-4">
 		              <div class="card-header">
 		                <i class="fas fa-table me-1"></i>
-		                DataTable Tipos de atracción
+		                Tabla de Tipos de atracción
 		              </div>
 		              <div class="card-body">
 		                <table class="table-striped" id="datatablesSimple">

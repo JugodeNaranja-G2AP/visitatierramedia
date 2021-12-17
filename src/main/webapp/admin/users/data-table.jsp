@@ -86,8 +86,8 @@
 	                      	<td class="text-center">----</td>
 	                      </c:otherwise> 
 	                      </c:choose>
-	                      <td>
-	                        <a class="btn btn-warning" href="/visitatierramedia/admin/users/edit.do?id=${usuario.id}" role="button" title="Editar">
+	                      <td class="text-center">
+	                        <a class="btn btn-warning m-1" href="/visitatierramedia/admin/users/edit.do?id=${usuario.id}" role="button" title="Editar">
 	                          <i class="fas fa-pencil-alt"></i>
 	                        </a>
 	                        <!-- Button trigger modal -->

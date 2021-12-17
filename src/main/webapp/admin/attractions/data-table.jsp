@@ -80,8 +80,8 @@
 				                      <td><c:out value="${atraccion.cupoDePersonas}"></c:out></td>
 				                      <td><c:out value="${atraccion.tipo.getNombre()}"></c:out></td>
 				                      <td><c:out value="${atraccion.imagen}"></c:out></td>
-				                      <td>
-				                        <a class="btn btn-warning" href="/visitatierramedia/admin/attractions/edit.do?id=${atraccion.id}" role="button" title="Editar">
+				                      <td class="text-center">
+				                        <a class="btn btn-warning m-1" href="/visitatierramedia/admin/attractions/edit.do?id=${atraccion.id}" role="button" title="Editar">
 				                          <i class="fas fa-pencil-alt"></i>
 				                        </a>
 				                        <!-- Button trigger modal -->

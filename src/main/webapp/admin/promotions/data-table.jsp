@@ -89,11 +89,11 @@
                           <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${promocion.id}" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${promocion.id}" aria-expanded="true" aria-controls="collapseOne">
                                   Atracciones
                                 </button>
                               </h2>
-                              <div id="collapse${promocion.id}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div id="collapse${promocion.id}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                   <ul>
                                   	<c:forEach items="${promocion.atracciones}" var="atraccion">
@@ -132,8 +132,8 @@
 	                      	</c:otherwise>  
 	                      </c:choose>
 	                      
-	                      <td>
-	                      	<a class="btn btn-warning" href="/visitatierramedia/admin/promotions/edit.do?id=${promocion.id}" role="button" title="Editar">
+	                      <td class="text-center">
+	                      	<a class="btn btn-warning m-1" href="/visitatierramedia/admin/promotions/edit.do?id=${promocion.id}" role="button" title="Editar">
 	                          <i class="fas fa-pencil-alt"></i>
 	                        </a>
 	                        <!-- Button trigger modal -->

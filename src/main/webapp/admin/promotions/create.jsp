@@ -68,8 +68,8 @@
                 <form action="/visitatierramedia/admin/promotions/create.do" method="post" class="needs-validation" novalidate>
                   <jsp:include page="/admin/promotions/form.jsp"></jsp:include>
                   <div class="d-grid gap-2 d-md-block mt-5">
-                    <button class="btn btn-primary" type="submit">Crear</button>
-                    <a onclick="window.history.back();" class="btn btn-secondary"
+                    <button class="btn btn-warning" type="submit">Crear</button>
+                    <a onclick="window.history.back();" class="btn btn-info"
 					role="button">Cancelar</a>
                   </div>
                 </form>

@@ -76,7 +76,7 @@
                                 	<c:otherwise>
                                 	<li class="nav-item" role="presentation">
 	                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-	                                        data-bs-target='#<c:out value="${atraccion.nombre}"></c:out>' type="button" role="tab" aria-controls="profile"
+	                                        data-bs-target='#atr<c:out value="${atraccion.id}"></c:out>' type="button" role="tab" aria-controls="profile"
 	                                        aria-selected="false"><c:out value="${atraccion.nombre}"></c:out></button>
                                 	</li>
                                 	</c:otherwise>
@@ -108,7 +108,7 @@
                                 </div>
                                   </c:when>
                                   <c:otherwise>
-                                  	<div class="tab-pane fade" id='<c:out value="${atraccion.nombre}"></c:out>' role="tabpanel" aria-labelledby="profile-tab">
+                                  	<div class="tab-pane fade" id='atr<c:out value="${atraccion.id}"></c:out>' role="tabpanel" aria-labelledby="profile-tab">
 	                                    <div class="card mb-3 border-top-0">
 	                                        <div class="row g-0">
 	                                            <div class="col-md-8">

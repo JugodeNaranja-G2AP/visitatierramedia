@@ -76,7 +76,7 @@
                                 	<c:otherwise>
                                 	<li class="nav-item" role="presentation">
 	                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-	                                        data-bs-target='#<c:out value="${atraccion.nombre}"></c:out>' type="button" role="tab" aria-controls="profile"
+	                                        data-bs-target='#atr<c:out value="${atraccion.id}"></c:out>' type="button" role="tab" aria-controls="profile"
 	                                        aria-selected="false"><c:out value="${atraccion.nombre}"></c:out></button>
                                 	</li>
                                 	</c:otherwise>
@@ -108,7 +108,7 @@
                                 </div>
                                   </c:when>
                                   <c:otherwise>
-                                  	<div class="tab-pane fade" id='<c:out value="${atraccion.nombre}"></c:out>' role="tabpanel" aria-labelledby="profile-tab">
+                                  	<div class="tab-pane fade" id='atr<c:out value="${atraccion.id}"></c:out>' role="tabpanel" aria-labelledby="profile-tab">
 	                                    <div class="card mb-3 border-top-0">
 	                                        <div class="row g-0">
 	                                            <div class="col-md-8">
@@ -133,6 +133,7 @@
                                     <li class="list-group-item dato-descuento text-muted p-0 fs-6 "><del> <c:out value="${producto.ahorro() + producto.getCosto()}"></c:out> oros</del>
                                     </li>
                                     <li class="list-group-item dato-oro fs-3 p-0 "><c:out value="${producto.getCosto()}"></c:out> oros</li>
+                                    <li class="list-group-item fs-5 text-muted p-0 ">Tiempo de visita: <c:out value="${Reloj.conversor(producto.getTiempo())}"></c:out></li>
 							<!--      <li class="list-group-item dato-promo p-0 fs-5 ">¡Doriath es gratis!</li> -->
                                     <li class="list-group-item dato-cupo text-muted p-0 ">¡Quedan <c:out value="${producto.getCupoMin()}"></c:out> lugares!</li>
                                 </ul>

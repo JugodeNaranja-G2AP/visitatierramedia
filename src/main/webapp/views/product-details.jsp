@@ -133,6 +133,7 @@
                                     <li class="list-group-item dato-descuento text-muted p-0 fs-6 "><del> <c:out value="${producto.ahorro() + producto.getCosto()}"></c:out> oros</del>
                                     </li>
                                     <li class="list-group-item dato-oro fs-3 p-0 "><c:out value="${producto.getCosto()}"></c:out> oros</li>
+                                    <li class="list-group-item fs-5 text-muted p-0 ">Tiempo de visita: <c:out value="${Reloj.conversor(producto.getTiempo())}"></c:out></li>
 							<!--      <li class="list-group-item dato-promo p-0 fs-5 ">¡Doriath es gratis!</li> -->
                                     <li class="list-group-item dato-cupo text-muted p-0 ">¡Quedan <c:out value="${producto.getCupoMin()}"></c:out> lugares!</li>
                                 </ul>
